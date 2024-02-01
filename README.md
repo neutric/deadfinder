@@ -50,15 +50,15 @@ puts Output
 ## Usage
 ```
 Commands:
-  deadfinder file <FILE>            # Scan the URLs from File. (e.g deadfinder file urls.txt)
+  deadfinder file <FILE>            # Scan the URLs from file. (e.g deadfinder file urls.txt)
   deadfinder help [COMMAND]         # Describe available commands or one specific command
   deadfinder pipe                   # Scan the URLs from STDIN. (e.g cat urls.txt | deadfinder pipe)
   deadfinder sitemap <SITEMAP-URL>  # Scan the URLs from sitemap.
-  deadfinder url <URL>              # Scan the Single URL.
+  deadfinder url <URL>              # Scan a single URL.
   deadfinder version                # Show version.
 
 Options:
-  c, [--concurrency=N]          # Number of concurrncy
+  c, [--concurrency=N]          # Number of concurrent scans
                                 # Default: 20
   t, [--timeout=N]              # Timeout in seconds
                                 # Default: 10
@@ -74,7 +74,7 @@ cat urls.txt | deadfinder pipe
 # Scan the URLs from File. (multiple URLs)
 deadfinder file urls.txt
 
-# Scan the Single URL.
+# Scan a single URL.
 deadfinder url https://www.hahwul.com
 
 # Scan the URLs from sitemap. (multiple URLs)
