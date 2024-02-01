@@ -133,7 +133,7 @@ def gen_output
 end
 
 class DeadFinder < Thor
-  class_option :concurrency, aliases: :c, default: 20, type: :numeric, desc: 'Number of concurrncy'
+  class_option :concurrency, aliases: :c, default: 20, type: :numeric, desc: 'Number of concurrent scans'
   class_option :timeout, aliases: :t, default: 10, type: :numeric, desc: 'Timeout in seconds'
   class_option :output, aliases: :o, default: '', type: :string, desc: 'File to write JSON result'
   class_option :headers, aliases: :H, default: [], type: :array, desc: 'Custom HTTP headers to send with request'
